@@ -1,0 +1,56 @@
+# 标准 Python 项目忽略规则
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+*.py.orig
+*.py.bak
+
+# 构建产物
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# 虚拟环境
+venv/
+.env/
+.venv/
+
+# IDE配置
+.idea/
+.vscode/
+*.code-workspace
+*.iml
+
+# 操作系统生成文件
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# 程序运行生成文件
+*.log
+*.xlsx
+*.xls
+~$*.xlsx  # 排除 Excel 临时文件
+~$*.xls
+
+# 项目本地配置
+local_settings.py
+.env.local
+.env.*.local
+
+# Windows 系统文件
+# 排除可能产生的 COM 对象缓存（pywin32 相关）
+win32com_gen_py/
+
+# 开发调试文件
+debug/
+test_output/
+
+# 日志文件（如果存在）
+logs/
+*.log
